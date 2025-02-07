@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/repositoryname/static/css/main.4f368753.css",
-    "main.js": "/repositoryname/static/js/main.605cb4a3.js",
-    "index.html": "/repositoryname/index.html",
-    "main.4f368753.css.map": "/repositoryname/static/css/main.4f368753.css.map",
-    "main.605cb4a3.js.map": "/repositoryname/static/js/main.605cb4a3.js.map"
+    "main.css": "/Appoint_Doc/static/css/main.4f368753.css",
+    "main.js": "/Appoint_Doc/static/js/main.5a4464be.js",
+    "index.html": "/Appoint_Doc/index.html",
+    "main.4f368753.css.map": "/Appoint_Doc/static/css/main.4f368753.css.map",
+    "main.5a4464be.js.map": "/Appoint_Doc/static/js/main.5a4464be.js.map"
   },
   "entrypoints": [
     "static/css/main.4f368753.css",
-    "static/js/main.605cb4a3.js"
+    "static/js/main.5a4464be.js"
   ]
 }
