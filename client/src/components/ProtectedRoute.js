@@ -1,12 +1,9 @@
 import axios from "axios";
-import React, { useEffect ,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-import { hideLoading, showLoading } from "../redux/features/alertSlice";
-import { setUser } from "../redux/features/userSlice";
-import { clearUser} from "../redux/features/userSlice";
+import { setUser, clearUser } from "../redux/features/userSlice";
 import Spinner from "./Spinner";
-import ErrorBoundary from "antd/es/alert/ErrorBoundary";
 
 export default function ProtectedRoute({ children, allowedRoles }) {
   const dispatch = useDispatch();
@@ -40,7 +37,7 @@ export default function ProtectedRoute({ children, allowedRoles }) {
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [dispatch, user]);
 
   if (loading) return <Spinner />;
   

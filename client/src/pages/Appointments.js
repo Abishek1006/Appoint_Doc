@@ -13,18 +13,18 @@ const Appointments = () => {
   const [error, setError] = useState(null);
   const { user } = useSelector((state) => state.user);
 
-  const getAppointments = async () => {
+  const getAppointments = useCallback(async () => {
     try {
       const endpoint = user.isDoctor ? 
         "/api/doctor/doctor-appointments" : 
         "/api/user/user-appointments";
-        
+      
       const res = await axios.get(endpoint, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      
+    
       if (res.data.success) {
         setAppointments(res.data.data);
       }
@@ -33,12 +33,11 @@ const Appointments = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [user]);
 
   useEffect(() => {
     getAppointments();
-  }, [user]);
-
+  }, [user, getAppointments]);
   const columns = [
     {
       title: "ID",
