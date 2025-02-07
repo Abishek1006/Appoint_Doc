@@ -98,6 +98,7 @@ function App() {
               </PublicRoute>
             }
           />
+          <Route path="/Appoint_Doc" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
         </Routes>
       )}
     </BrowserRouter>
