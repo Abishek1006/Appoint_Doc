@@ -7,7 +7,9 @@ const adminRoutes = require("./routes/adminRoute");
 const doctorRoutes = require("./routes/doctorRoute");
 const connectDb = require("./config/connectDb");
 const path = require("path");
-
+// Add CORS handling for production
+const cors = require('cors');
+app.use(cors());
 // dotenv config
 dotenv.config();
 connectDb();
@@ -39,3 +41,8 @@ const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`.green.bold);
 });
+
+
+
+// Update MongoDB connection
+// Make sure your DB_URL in .env is the production MongoDB URL

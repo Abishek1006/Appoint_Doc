@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Appoint_Doc/static/css/main.4f368753.css",
-    "main.js": "/Appoint_Doc/static/js/main.40bf7309.js",
+    "main.js": "/Appoint_Doc/static/js/main.f2b3374b.js",
     "index.html": "/Appoint_Doc/index.html",
     "main.4f368753.css.map": "/Appoint_Doc/static/css/main.4f368753.css.map",
-    "main.40bf7309.js.map": "/Appoint_Doc/static/js/main.40bf7309.js.map"
+    "main.f2b3374b.js.map": "/Appoint_Doc/static/js/main.f2b3374b.js.map"
   },
   "entrypoints": [
     "static/css/main.4f368753.css",
-    "static/js/main.40bf7309.js"
+    "static/js/main.f2b3374b.js"
   ]
 }

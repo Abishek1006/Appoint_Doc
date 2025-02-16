@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import Spinner from "./components/Spinner";
@@ -9,7 +9,6 @@ import Appointments from "./pages/Appointments";
 import BookingPage from "./pages/BookingPage";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
-import NotificationPage from "./pages/NotificationPage";
 import Register from "./pages/Register";
 import Doctors from "./pages/admin/Doctors";
 import Users from "./pages/admin/Users";
@@ -20,7 +19,7 @@ function App() {
   const { loading } = useSelector((state) => state.alerts);
 
   return (
-    <BrowserRouter basename="/Appoint_Doc">
+    <HashRouter>
       {loading ? (
         <Spinner />
       ) : (
@@ -101,8 +100,7 @@ function App() {
           <Route path="/Appoint_Doc" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
         </Routes>
       )}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
-
 export default App;
