@@ -11,7 +11,6 @@ const path = require("path");
 const cors = require('cors');
 
 
-
 // dotenv config
 dotenv.config();
 connectDb();
