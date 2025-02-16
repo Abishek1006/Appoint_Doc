@@ -1,5 +1,5 @@
 {
-  "proxy": "https://your-render-backend-url.onrender.com",
+  "proxy": "https://appoint-doc-0bqc.onrender.com",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -24,14 +24,15 @@
     "web-vitals": "^4.2.4",
     "webpack": "^5.97.1"
   },
-  "scripts": {
+ "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",

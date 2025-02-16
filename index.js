@@ -11,14 +11,14 @@ const path = require("path");
 const cors = require('cors');
 
 
-app.use(cors());
+
 // dotenv config
 dotenv.config();
 connectDb();
 
 // Initialize express app
 const app = express();
-
+app.use(cors());
 // Middlewares
 app.use(express.json()); // For parsing JSON requests
 app.use(morgan("dev")); // HTTP request logger
