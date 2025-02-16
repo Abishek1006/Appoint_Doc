@@ -9,6 +9,8 @@ const connectDb = require("./config/connectDb");
 const path = require("path");
 // Add CORS handling for production
 const cors = require('cors');
+
+
 app.use(cors());
 // dotenv config
 dotenv.config();
