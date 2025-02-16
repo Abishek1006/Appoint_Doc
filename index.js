@@ -15,10 +15,10 @@ const cors = require('cors');
 dotenv.config();
 connectDb();
 
-app.use(cors());
 // Initialize express app
 const app = express();
 
+app.use(cors());
 // Middlewares
 app.use(express.json()); // For parsing JSON requests
 app.use(morgan("dev")); // HTTP request logger
