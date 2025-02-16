@@ -11,11 +11,11 @@ const path = require("path");
 const cors = require('cors');
 
 
-app.use(cors());
 // dotenv config
 dotenv.config();
 connectDb();
 
+app.use(cors());
 // Initialize express app
 const app = express();
 
